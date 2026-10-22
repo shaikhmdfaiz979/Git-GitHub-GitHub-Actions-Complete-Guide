@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A beginner-friendly guide to Git, GitHub, GitHub Actions, and GitHub Pages with simple explanations and practical commands.">
+  <title>Git & GitHub Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Git and GitHub Learning Hub home">
+      <span class="brand-mark">⌘</span>
+      <span>Dev<span class="brand-accent">Start</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="#learn">Learn</a>
+      <a href="#commands">Commands</a>
+      <a href="#actions">Actions</a>
+      <a href="#hosting">Host a website</a>
+    </nav>
+    <a class="header-cta" href="#start">Start learning <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> YOUR PRACTICAL DEVELOPER GUIDE</div>
+        <h1>Learn Git & GitHub.<br><span>Build with confidence.</span></h1>
+        <p class="hero-copy">Your friendly, step-by-step path from your first Git command to GitHub Actions automation and publishing your own website.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#start">Explore the guide <span>→</span></a>
+          <a class="button button-ghost" href="#commands"><span class="play-icon">▶</span> See commands</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>G</span><span>GH</span><span>⚡</span></div>
+          <p><strong>Learn by doing</strong><br><small>Simple explanations · Real examples</small></p>
+        </div>
+      </div>
+      <div class="terminal-card" aria-label="Example Git terminal commands">
+        <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>terminal — git-practice</span><span class="terminal-status">● Ready</span></div>
+        <div class="terminal-body">
+          <p class="terminal-comment"># Start your project</p>
+          <p><span class="terminal-prompt">$</span> git init</p>
+          <p class="terminal-success">Initialized empty Git repository</p>
+          <p><span class="terminal-prompt">$</span> git add .</p>
+          <p><span class="terminal-prompt">$</span> git commit -m <span class="terminal-string">"My first commit"</span></p>
+          <p class="terminal-success">✓ Your first checkpoint is saved!</p>
+          <p><span class="terminal-prompt">$</span> <span class="cursor">_</span></p>
+        </div>
+        <div class="terminal-footer"><span><span class="tiny-dot"></span> main</span><span>Git is tracking your work</span></div>
+      </div>
+      <div class="floating-chip chip-top"><span>⌘</span> Version control</div>
+      <div class="floating-chip chip-bottom"><span>⚡</span> Workflow automation</div>
+    </section>
+
+    <section class="stats-strip" aria-label="What you will learn">
+      <div><strong>01</strong><span>Learn the basics</span></div>
+      <div><strong>02</strong><span>Collaborate on GitHub</span></div>
+      <div><strong>03</strong><span>Automate with Actions</span></div>
+      <div><strong>04</strong><span>Publish your website</span></div>
+    </section>
+
+    <section class="section intro-section" id="start">
+      <div class="section-heading">
+        <span class="section-kicker">YOUR LEARNING PATH</span>
+        <h2>Everything starts with <span>one command.</span></h2>
+        <p>No complicated language. No assumptions. Just clear explanations and small steps that build your skills.</p>
+      </div>
+      <div class="concept-grid" id="learn">
+        <article class="concept-card">
+          <div class="concept-icon git-icon">⑂</div><span class="card-number">01 / VERSION CONTROL</span>
+          <h3>Git fundamentals</h3>
+          <p>Track changes, save checkpoints, create branches, and understand your project's history.</p>
+          <a href="#commands">Explore Git <span>→</span></a>
+        </article>
+        <article class="concept-card">
+          <div class="concept-icon github-icon">◉</div><span class="card-number">02 / COLLABORATION</span>
+          <h3>GitHub essentials</h3>
+          <p>Store repositories online, share your work, review code, and contribute with pull requests.</p>
+          <a href="#github">Explore GitHub <span>→</span></a>
+        </article>
+        <article class="concept-card">
+          <div class="concept-icon actions-icon">ϟ</div><span class="card-number">03 / AUTOMATION</span>
+          <h3>GitHub Actions</h3>
+          <p>Run tasks automatically when you push code, open pull requests, or start a workflow.</p>
+          <a href="#actions">Explore Actions <span>→</span></a>
+        </article>
+        <article class="concept-card">
+          <div class="concept-icon pages-icon">▤</div><span class="card-number">04 / DEPLOYMENT</span>
+          <h3>GitHub Pages</h3>
+          <p>Turn your HTML and CSS into a public website you can share with the world.</p>
+          <a href="#hosting">Publish a site <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section command-section" id="commands">
+      <div class="section-heading split-heading">
+        <div><span class="section-kicker">THE EVERYDAY TOOLKIT</span><h2>Commands you'll <span>use for real.</span></h2></div>
+        <p>Choose a topic, read what it does, and copy a command to practise in your own test repository.</p>
+      </div>
+      <div class="command-layout">
+        <div class="command-tabs" role="tablist" aria-label="Git command topics">
+          <button class="command-tab active" data-tab="setup" role="tab" aria-selected="true">01 <span>Start a project</span></button>
+          <button class="command-tab" data-tab="save" role="tab" aria-selected="false">02 <span>Save changes</span></button>
+          <button class="command-tab" data-tab="branch" role="tab" aria-selected="false">03 <span>Work with branches</span></button>
+          <button class="command-tab" data-tab="remote" role="tab" aria-selected="false">04 <span>Connect to GitHub</span></button>
+        </div>
+        <div class="command-panel" id="commandPanel" role="tabpanel">
+          <div class="panel-top"><div><span class="panel-label">QUICK LESSON</span><h3 id="commandTitle">Create your first repository</h3></div><span class="level-pill">BEGINNER</span></div>
+          <p id="commandDescription">A repository is a project folder that Git tracks. Initialise Git to start recording your project's history.</p>
+          <div class="code-window">
+            <div class="code-title"><span><i></i><i></i><i></i></span> Bash / Terminal <button class="copy-button" id="copyCommand">Copy code</button></div>
+            <pre><code id="commandCode">mkdir my-project
+cd my-project
+git init</code></pre>
+          </div>
+          <div class="tip-box"><span>✦</span><p id="commandTip"><strong>Remember:</strong> `git init` creates the local Git repository. It does not upload anything to GitHub.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section github-section" id="github">
+      <div class="github-copy"><span class="section-kicker">WORK BETTER TOGETHER</span><h2>Your code, safely <span>shared online.</span></h2><p>GitHub makes it easier to keep a remote copy of your project, collaborate with other developers, and show your work to potential employers.</p>
+        <ul class="check-list"><li><span>✓</span> Create a repository on GitHub</li><li><span>✓</span> Push your local commits online</li><li><span>✓</span> Open pull requests and review changes</li><li><span>✓</span> Keep your README clear and useful</li></ul>
+        <a class="button button-dark" href="https://docs.github.com/en/get-started" target="_blank" rel="noreferrer">Official GitHub beginner docs ↗</a>
+      </div>
+      <div class="repo-card">
+        <div class="repo-head"><div class="repo-avatar">⌘</div><div><strong>my-awesome-project</strong><p>Public repository</p></div><span class="repo-star">☆ Star</span></div>
+        <div class="repo-description">A place to learn, practise, and build something useful.</div>
+        <div class="repo-metrics"><span><i class="lang-dot"></i> HTML</span><span>⑂ main</span><span>☆ 12</span><span>⑂ 3 forks</span></div>
+        <div class="repo-file"><span class="file-icon">▤</span><span>README.md</span><small>Project guide</small></div>
+        <div class="repo-file"><span class="file-icon">◇</span><span>index.html</span><small>Website homepage</small></div>
+        <div class="repo-file"><span class="file-icon">⚙</span><span>.github/workflows/</span><small>Automation</small></div>
+        <div class="repo-commit"><span class="commit-check">✓</span><div><strong>Latest commit</strong><p>Add project documentation</p></div><code>main</code></div>
+      </div>
+    </section>
+
+    <section class="section actions-section" id="actions">
+      <div class="section-heading"><span class="section-kicker">LESS MANUAL WORK, MORE BUILDING</span><h2>Automate with <span>GitHub Actions.</span></h2><p>Make GitHub run a workflow for you. Start with a small workflow that prints a message when you push to the main branch.</p></div>
+      <div class="workflow-flow"><div class="flow-step"><div class="flow-icon">↥</div><strong>Push code</strong><small>You update GitHub</small></div><div class="flow-arrow">→</div><div class="flow-step"><div class="flow-icon">⚡</div><strong>Workflow starts</strong><small>An event triggers it</small></div><div class="flow-arrow">→</div><div class="flow-step"><div class="flow-icon">✓</div><strong>Job runs</strong><small>Commands execute</small></div></div>
+      <div class="workflow-code">
+        <div class="workflow-code-head"><div><span class="yaml-dot"></span><strong>hello.yml</strong><small>.github / workflows</small></div><button class="copy-button copy-light" id="copyWorkflow">Copy YAML</button></div>
+        <pre><code id="workflowCode">name: Hello GitHub Actions
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions!"</code></pre>
+        <div class="workflow-code-foot"><span>✓ Ready to customise</span><span>YAML workflow</span></div>
+      </div>
+      <p class="workflow-note">Save this file as <code>.github/workflows/hello.yml</code>, commit it, and push it to GitHub. Then open your repository's Actions tab to see the run.</p>
+    </section>
+
+    <section class="section hosting-section" id="hosting">
+      <div class="hosting-text"><span class="section-kicker">TAKE IT LIVE</span><h2>From a folder to <span>a live website.</span></h2><p>GitHub Pages can host static websites made with HTML, CSS, and browser-side JavaScript. Follow these steps to publish a simple site.</p>
+        <div class="hosting-steps">
+          <div class="hosting-step"><span>1</span><div><strong>Create index.html</strong><p>Add the content of your website.</p></div></div>
+          <div class="hosting-step"><span>2</span><div><strong>Push it to GitHub</strong><p>Commit your files and push to your repository.</p></div></div>
+          <div class="hosting-step"><span>3</span><div><strong>Enable Pages</strong><p>Open Settings → Pages and choose your publishing source.</p></div></div>
+          <div class="hosting-step"><span>4</span><div><strong>Share your URL</strong><p>Wait for deployment, then open the URL shown in Pages settings.</p></div></div>
+        </div>
+        <a class="text-link" href="https://docs.github.com/en/pages" target="_blank" rel="noreferrer">Read the GitHub Pages docs ↗</a>
+      </div>
+      <div class="browser-mock">
+        <div class="browser-bar"><span></span><span></span><span></span><div class="browser-url">your-username.github.io</div></div>
+        <div class="mini-site"><div class="mini-site-tag">MY FIRST WEBSITE</div><h3>Hello, world! 👋</h3><p>Built with HTML.<br>Published with GitHub Pages.</p><div class="mini-site-button">Explore my work →</div><div class="mini-site-orbit orbit-a"></div><div class="mini-site-orbit orbit-b"></div></div>
+        <div class="live-label"><span></span> Example website preview</div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="next-step"><div class="cta-orb"></div><span class="section-kicker">YOUR TURN</span><h2>Small steps. Real skills.</h2><p>Start with one command today. Keep practising, build projects, and share what you learn.</p><div class="cta-actions"><a class="button button-primary" href="#commands">Practise Git commands →</a><a class="button button-ghost" href="https://github.com/new" target="_blank" rel="noreferrer">Create a GitHub repo ↗</a></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">⌘</span><span>Dev<span class="brand-accent">Start</span></span></a><p>Made for curious beginners learning Git, GitHub & DevOps.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
